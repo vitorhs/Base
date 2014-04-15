@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Cinema
+
+namespace Base.Ingresso
 {
     class CamaroteSuperior:Vip
     {
@@ -24,15 +24,15 @@ namespace Cinema
             get { return camarotesuperior; }
         }
 
-        public override void ImprimeValor()
+        public override double ImprimeValor()
         {
             var vip = Valor + ValorAdcional+camarotesuperior;
-            Console.WriteLine(vip); ;
+            return vip ;
         }
 
-        public void Local()
+        public string Local()
         {
-            Console.WriteLine(localização);
+           return localização;
         }
     }
 

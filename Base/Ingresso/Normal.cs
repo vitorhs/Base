@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Cinema
+namespace Base.Ingresso
 {
     class Normal:Ingresso
     {
-        public void Tipo()
+        public string Tipo()
         {
-            Console.WriteLine("Ingresso Normal");
+            return "Ingresso Normal";
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Easy
+namespace Base.Easy
 {
     class Aeronaves
     {
@@ -22,7 +22,7 @@ namespace Easy
             set
             {
                 string validador = "" + value;
-                if (validador.Contains('.'))
+                if (validador.Contains("."))
                 {
 
                     i++;
@@ -61,7 +61,7 @@ namespace Easy
             set
             {
                 string validador = value;
-                if (validador.Contains('.'))
+                if (validador.Contains("."))
                 {
 
                     i++;

@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Cinema
+namespace Base.Ingresso
 {
     class Vip:Ingresso
     {
         private double valoradd;
 
-        public override void ImprimeValor(){
+        public override double ImprimeValor(){
 
             var vip = Valor + valoradd;
-            Console.WriteLine(vip);
+            return vip;
         }
 
         public double ValorAdcional {

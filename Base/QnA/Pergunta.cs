@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Perg.Definition
+namespace Base.Pergunta
 {
    public class Pergunta
     {

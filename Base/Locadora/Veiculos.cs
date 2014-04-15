@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Pessoa;
 
-namespace Carros
+namespace Base.Locadora
 {
     public class Veiculos
     {

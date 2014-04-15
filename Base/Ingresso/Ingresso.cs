@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Cinema
+
+namespace Base.Ingresso
 {
     class Ingresso
     {
@@ -25,8 +25,9 @@ namespace Cinema
             set { valor = value ;}
             get { return valor; }
         }
-        public virtual void ImprimeValor() {
-        
+        public  virtual double ImprimeValor() {
+
+            return 0;
         
         }
 

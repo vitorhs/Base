@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 
-namespace Lazer
+namespace Base.Academia
 {
     class aluno
     {

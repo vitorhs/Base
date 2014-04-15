@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 
-namespace Pessoa
+namespace Base.Locadora
 {
     public class  Cliente
     {
