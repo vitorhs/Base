@@ -5,10 +5,10 @@ using System.Text;
 
 namespace Base.Pergunta
 {
-   public class Pergunta
+    public class Pergunta
     {
-        private int _id=0;
-        private int id = 0; 
+        private int _id = 0;
+        private int id = 0;
         private string _pergunta;
         private string _a;
         private string _b;
@@ -16,7 +16,7 @@ namespace Base.Pergunta
         private string _d;
         private string _resposta;
         private List<Pergunta> pg = new List<Pergunta>();
-      
+
         public Pergunta()
         {
             _pergunta = "Quem desenvolveu está classe?";
@@ -26,7 +26,7 @@ namespace Base.Pergunta
             _d = "Vitor Santos";
             _resposta = "Vitor Santos";
 
-            
+
         }
 
         private Pergunta(int id, string pergunta, string a, string b, string c, string d, string resposta)
@@ -44,25 +44,25 @@ namespace Base.Pergunta
 
         private void Addpergunta()
         {
-            id = pg.Count; 
-            Pergunta pr = new Pergunta(id,_pergunta, _a, _b, _c, _d, _resposta);
+            id = pg.Count;
+            Pergunta pr = new Pergunta(id, _pergunta, _a, _b, _c, _d, _resposta);
             pg.Add(pr);
-           
+
         }
 
         public string ImprimePergunta()
         {
             Random rand = new Random(DateTime.Now.ToString().GetHashCode());
-            int index=0;
+            int index = 0;
             index = rand.Next(pg.Count);
-                 
-           return pg[index].ToString();
+
+            return pg[index].ToString();
             
         }
 
         public override string ToString()
         {
-            return _id+ _pergunta + "\nA)"+_a+"\nB)"+_b+"\nC)"+_c+"\nD)"+_d;
+            return _id + _pergunta + "\nA)" + _a + "\nB)" + _b + "\nC)" + _c + "\nD)" + _d;
         }
 
         public string Correção(string resposta)
@@ -81,7 +81,7 @@ namespace Base.Pergunta
 
                 case "D":
                     resposta = D;
-                    break; 
+                    break;
             }
 
             var k = from c in pg where c._resposta == resposta select c;
@@ -89,7 +89,8 @@ namespace Base.Pergunta
 
         }
 
-        public string Question {
+        public string Question
+        {
 
             set { _pergunta = value; }
             get { return _pergunta; }
@@ -120,9 +121,10 @@ namespace Base.Pergunta
 
         public string Answer
         {
-            set { 
+            set
+            {
                 _resposta = value;
-                Addpergunta();    
+                Addpergunta();
             }
             get { return _resposta; }
         }
