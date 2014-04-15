@@ -52,11 +52,38 @@ namespace Base.Pergunta
 
         public string ImprimePergunta()
         {
-            Random rand = new Random(DateTime.Now.ToString().GetHashCode());
-            int index = 0;
-            index = rand.Next(pg.Count);
+            Random rn = new Random();
+            
 
-            return pg[index].ToString();
+            List<int> mm = new List<int>();
+            for (int j = 0; j < pg.Count; j++)
+            {
+                int ranNums = rn.Next(pg.Count);
+                if(!mm.Contains (ranNums))
+                mm.Add(ranNums);
+            }
+            int r=-1;
+
+            if (r < 0) {
+
+                r = mm.Count;
+
+            }
+            else
+            {
+                r = r;
+            }
+            int z=0;
+            for (int i=0; i<mm.Count ;i++) { 
+                  z = mm[r-1];
+
+            }
+
+            /*Random rand = new Random(DateTime.Now.ToString().GetHashCode());
+            int index = 0;
+            index = rand.Next(pg.Count);*/
+            r--;
+            return pg[z].ToString();
             
         }
 
