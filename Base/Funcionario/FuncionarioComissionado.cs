@@ -2,7 +2,7 @@
 
 namespace Base.Funcionario
 {
-	class FuncionarioComissionado:Funcionarios
+	public class FuncionarioComissionado:Funcionarios
 	{
 		private double salarioCms ;
 		private double comissão;

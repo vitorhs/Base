@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Base.Ingresso
 {
-    class Ingresso
+    public class Ingresso
     {
         private double valor;
 

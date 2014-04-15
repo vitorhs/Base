@@ -2,7 +2,7 @@
 
 namespace Base.Funcionario
 {
-	class Funcionarios
+	public class Funcionarios
 	{
 		private string nome;
 		private string cpf;

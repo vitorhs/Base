@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Base.Ingresso
 {
-    class Vip:Ingresso
+    public class Vip:Ingresso
     {
         private double valoradd;
 

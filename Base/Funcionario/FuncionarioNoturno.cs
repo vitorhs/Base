@@ -2,7 +2,7 @@
 
 namespace Base.Funcionario
 {
-	class FuncionarioNoturno:Funcionarios
+	public class FuncionarioNoturno:Funcionarios
 	{
 		private double salarioNtn;
 		private int valornoite = 60;

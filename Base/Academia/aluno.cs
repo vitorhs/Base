@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Base.Academia
 {
-    class aluno
+    public class aluno
     {
         private string nome;
         private int codigo;

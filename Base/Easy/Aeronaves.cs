@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Base.Easy
 {
-    class Aeronaves
+    public class Aeronaves
     {
         private string codAero = "<Codigo>";
         private string modeloAero = "<Sem Modelo>";

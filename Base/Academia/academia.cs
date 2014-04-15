@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Base.Academia
 {
-    class academia
+   public class academia
     {
         private string nome = "<sem nome>";
         private int aluno = 0;

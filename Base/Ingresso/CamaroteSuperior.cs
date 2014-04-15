@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Base.Ingresso
 {
-    class CamaroteSuperior:Vip
+    public class CamaroteSuperior : Vip
     {
         private string localização;
         private double camarotesuperior;

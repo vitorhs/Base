@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Base.Ingresso
 {
-    class Normal:Ingresso
+    public class Normal : Ingresso
     {
         public string Tipo()
         {
