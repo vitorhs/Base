@@ -16,7 +16,7 @@ namespace Base.Locadora
 
         }
 
-        public Proprietarios(string nome, string cpf, string fone, string email, string senha, Veiculos veiculo)
+        private Proprietarios(string nome, string cpf, string fone, string email, string senha, Veiculos veiculo)
         {
             this.nome = nome;
             this.cpf = cpf;
@@ -26,7 +26,7 @@ namespace Base.Locadora
             v1.Add(veiculo);
         
         }
-        public Proprietarios(string nome, string cpf, string fone, string email, string senha)
+        private Proprietarios(string nome, string cpf, string fone, string email, string senha)
         {
             this.nome = nome;
             this.cpf = cpf;
@@ -94,6 +94,7 @@ namespace Base.Locadora
         public void AddVeiculos(Veiculos veiculo) {
 
             v1.Add(veiculo);
+
                   }
 
         public override string ToString()
@@ -101,8 +102,8 @@ namespace Base.Locadora
             return "\nProprietario: \nNome: " + nome + "\nCPF: " + cpf + "\nTelefone: " + fone + "\nEmail: " + email + "\nSenha: " + senha ;
         }
 
-        public virtual string ToPrCar() {
-            
+        public virtual string ListProprietarioCarro() {
+
             return ListProprietarios() + ListaCarros();
         
         }
@@ -118,13 +119,21 @@ namespace Base.Locadora
         
         }
 
-        public void busca(string cpf) {
-       
-         
+        public string  BuscaCarros(string cpf) {
+            string resultv= "" ;
+            string resultp = ""; 
+
+            var l = from p in p1 where p.Cpf == cpf select p;
+            foreach (var e in l)
+            {
+                resultp += e;
+            }
              var l1 = from car in v1 where car.Cpf == cpf select car;
-             foreach (var c in l1) { 
+             foreach (var c in l1) {
+                 resultv += c;
              }
-        
+
+             return resultp + resultv ;
         }
     }
 }

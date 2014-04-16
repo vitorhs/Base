@@ -26,7 +26,6 @@ namespace Base.Pergunta
             _d = "Vitor Santos";
             _resposta = "Vitor Santos";
 
-
         }
 
         private Pergunta(int id, string pergunta, string a, string b, string c, string d, string resposta)
@@ -71,7 +70,7 @@ namespace Base.Pergunta
             }
             else
             {
-                r = r;
+               
             }
             int z=0;
             for (int i=0; i<mm.Count ;i++) { 

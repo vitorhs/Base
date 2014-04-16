@@ -13,7 +13,6 @@ namespace Base.Academia
         private string trainner;
         private int exercdiarios;
         private academia adm = new academia();
-        private int i=0;
 
         public void setNome(string nome)
     {
